@@ -1,0 +1,86 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+
+    margin-bottom: 70px;
+  }
+
+  &__highlight {
+    @extend %span;
+  }
+
+  &__title {
+    @extend %h2;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @extend %description;
+    width: 70%;
+  }
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid $borderColor;
+  border-radius: 8px;
+
+  padding: 24px;
+
+  width: 525px;
+
+  &__person-info {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
+
+  &__person-name {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__star {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__span {
+    margin-left: 12px;
+  }
+}

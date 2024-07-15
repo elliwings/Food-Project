@@ -1,0 +1,16 @@
+@mixin button($background, $padding-x, $padding-y) {
+  display: inline-block;
+  color: $whiteColor;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+
+  background: $background;
+
+  border: 1.5px solid $darkButtonHover;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  padding: $padding-y $padding-x;
+}

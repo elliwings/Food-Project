@@ -1,0 +1,49 @@
+.section-with-bg {
+  background: $bgColorSection;
+}
+
+.app-download {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+
+    width: 50%;
+  }
+
+  &__highlight {
+    @extend %span;
+  }
+
+  &__title {
+    @extend %h2;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @extend %description;
+    margin-bottom: 35px;
+  }
+}
+
+.apps {
+  display: flex;
+  gap: 15px;
+
+  &__button {
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+  }
+}

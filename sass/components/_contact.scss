@@ -1,0 +1,69 @@
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__highlight {
+    @extend %span;
+  }
+
+  &__title {
+    @extend %h2;
+    text-align: center;
+    width: 70%;
+  }
+
+  &__form-block {
+    display: flex;
+  }
+}
+
+.message-form {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  width: 750px;
+
+  border: 1px solid $borderColor;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: $whiteColor;
+
+  &__input {
+    width: 100%;
+
+    padding: 10px;
+    padding-left: 15px;
+
+    border: 1px solid $borderColor;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $borderColor;
+    }
+  }
+
+  &__button {
+    position: absolute;
+
+    right: 10px;
+    margin-right: 10px;
+    @include button($buttonsAndHoverOrangeColor, 40px, 10px);
+  }
+}

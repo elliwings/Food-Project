@@ -1,0 +1,40 @@
+.about-us {
+  display: flex;
+  gap: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  img {
+    width: 555px;
+    height: 500px;
+
+    object-fit: cover;
+    border-radius: 30px;
+    opacity: 0.8;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  &__highlight {
+    @extend %span;
+  }
+
+  &__title {
+    @extend %h2;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    @extend %description;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    @include button($buttonsAndHoverOrangeColor, 28px, 12px);
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $darkButtonHover;
+      transition: all 0.5s ease;
+    }
+  }
+}
